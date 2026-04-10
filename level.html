@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CR's AA Wordle</title>
+
+    <meta charset="UTF-8">
+    <meta name="author" content="CR's AA">
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+    <button id="homeButton" type="button" onclick="location.href='index.html'">Back to Home</button>
+
+    <header>
+        <img class="logo" src="imgs/logo.png">
+    </header>
+
+    <section class="additionalInfo">
+        <p id="lives">Lives: 3</p>
+        <p id="score">Score: 0</p>
+        <p id="infoAndOther">how many attemps also affect your score- blahblahblah- 1 attempt = +5 extra, using all 6 attemps = +0 extra</p>
+    </section>
+
+    <section class="gameUI">
+        <p>Select Difficulty:</p>
+        <button onclick="saveDifficulty('easy'); location.href='game.html'">Easy Points:1</button>
+        <button onclick="saveDifficulty('medium'); location.href='game.html'">Medium Points:2</button>
+        <button onclick="saveDifficulty('hard'); location.href='game.html'">Hard Points:5</button>
+    </section>
+
+    <script src="level.js"></script>
+</body>
+
+</html>

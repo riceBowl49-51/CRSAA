@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CR's AA Wordle</title>
+
+    <meta charset="UTF-8">
+    <meta name="author" content="CR's AA">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body onload="newInfo()">
+    <header>
+        <img class="logo" src="imgs/logo.png">
+    </header>
+
+    <p class="info">
+        This is WORDLE the most intense word guessing game in the history of mankind. Guess a 5 letter word in 6 attemps
+        or face certain doom. Navigate through intense puzzles, using tactics only someone with 1000 IQ could make. If a
+        letter is green its correct, yellow its in the wrong spot, red not in the word. So what are you waiting for the
+        most intense word game in history is anticipating for you.
+    </p>
+
+    <p id="result"></p>
+
+    <form name="player-form" onsubmit="return validateForm()">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username">
+
+        <button type="submit" onclick="return saveUsername()">Save Username</button>
+
+    </form>
+
+    <div>
+        <button id="changeUsername" type="button" onclick="changeUsername()">Change Username</button>
+        <button id="clearUsername" type="button" onclick="clearUsername()">Clear Username</button>
+    </div>
+
+    <div>
+        <button id="tutorialButton" type="button" onclick="location.href='tutorial.html'">Tutorial</button>
+        <button id="playButton" type="button" onclick="location.href='level.html'">Play</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

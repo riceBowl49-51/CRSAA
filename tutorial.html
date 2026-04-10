@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CR's AA Wordle</title>
+
+    <meta charset="UTF-8">
+    <meta name="author" content="Rice">
+    <link rel="stylesheet" href="tutorial.css">
+</head>
+
+<body onload="loadUsername()">
+    <button id="backButton" type="button" onclick="location.href='index.html'">Back</button>
+
+    <img class="logo" src="imgs/logo.png">
+
+    <p id="greetings"></p>
+
+    <p id="instruction">Type any 5-letter word, then press ENTER to see what the colors mean.</p>
+    <p id="colorInstruction">
+        🟩 Green = Correct letter and position <br>
+        🟨 Yellow = Correct letter, wrong position <br>
+        🟥 Red = Letter not in the word
+    </p>
+
+    <table>
+        <tr>
+            <td id="r1c1"></td>
+            <td id="r1c2"></td>
+            <td id="r1c3"></td>
+            <td id="r1c4"></td>
+            <td id="r1c5"></td>
+        </tr>
+    </table>
+
+    <p id="result"></p>
+    <button id="playButton" type="button" onclick="location.href='level.html'">Play</button>
+
+    <section class="keyboard">
+        <div class="keyRow">
+            <button id="Q" type="button" onclick="onLetterClicked('Q')">Q</button>
+            <button id="W" type="button" onclick="onLetterClicked('W')">W</button>
+            <button id="E" type="button" onclick="onLetterClicked('E')">E</button>
+            <button id="R" type="button" onclick="onLetterClicked('R')">R</button>
+            <button id="T" type="button" onclick="onLetterClicked('T')">T</button>
+            <button id="Y" type="button" onclick="onLetterClicked('Y')">Y</button>
+            <button id="U" type="button" onclick="onLetterClicked('U')">U</button>
+            <button id="I" type="button" onclick="onLetterClicked('I')">I</button>
+            <button id="O" type="button" onclick="onLetterClicked('O')">O</button>
+            <button id="P" type="button" onclick="onLetterClicked('P')">P</button>
+        </div>
+
+        <div class="keyRow">
+            <button id="A" type="button" onclick="onLetterClicked('A')">A</button>
+            <button id="S" type="button" onclick="onLetterClicked('S')">S</button>
+            <button id="D" type="button" onclick="onLetterClicked('D')">D</button>
+            <button id="F" type="button" onclick="onLetterClicked('F')">F</button>
+            <button id="G" type="button" onclick="onLetterClicked('G')">G</button>
+            <button id="H" type="button" onclick="onLetterClicked('H')">H</button>
+            <button id="J" type="button" onclick="onLetterClicked('J')">J</button>
+            <button id="K" type="button" onclick="onLetterClicked('K')">K</button>
+            <button id="L" type="button" onclick="onLetterClicked('L')">L</button>
+        </div>
+
+        <div class="keyRow">
+            <button id="ENTER" class="longBut" type="button" onclick="onEnterClicked()">ENTER</button>
+            <button id="Z" type="button" onclick="onLetterClicked('Z')">Z</button>
+            <button id="X" type="button" onclick="onLetterClicked('X')">X</button>
+            <button id="C" type="button" onclick="onLetterClicked('C')">C</button>
+            <button id="V" type="button" onclick="onLetterClicked('V')">V</button>
+            <button id="B" type="button" onclick="onLetterClicked('B')">B</button>
+            <button id="N" type="button" onclick="onLetterClicked('N')">N</button>
+            <button id="M" type="button" onclick="onLetterClicked('M')">M</button>
+            <button id="DEL" class="longBut" type="button" onclick="onDelClicked()">DEL</button>
+        </div>
+        <br>
+
+        <script src="tutorial.js"></script>
+</body>
+
+</html>

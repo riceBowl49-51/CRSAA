@@ -1,0 +1,142 @@
+@font-face {
+    font-family: "Fantasy";
+    src: url(fonts/AGracefulSpirit-ARKBx.ttf);
+}
+
+body {
+    background-image: url(imgs/bgV2.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo {
+    width: 200px;
+    height: 68px;
+}
+
+table {
+    margin-top: 25px;
+    border-spacing: 5px;
+    border-color: black;
+    font-family: "Fantasy";
+}
+
+td,
+th {
+    border: 1px solid white;
+    height: 75px;
+    width: 75px;
+    margin: 20px;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.response {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: auto;
+    height: 60px;
+    gap: 10px;
+}
+
+.longBut {
+    width: 70px
+}
+
+button {
+    margin: 2px;
+    height: 60px;
+    width: 50px;
+    border-radius: 10%;
+    border-color: rgba(240, 248, 255, 0);
+    font-weight: bold;
+    cursor: pointer;
+    font-family: "Fantasy";
+    background-color: rgb(208, 255, 138);
+    color: rgb(0, 78, 0);
+}
+
+button:hover {
+    background-color: rgb(255, 250, 173);
+}
+
+#homeButton:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+#restart:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+button:active {
+    background-color: rgb(255, 246, 124);
+}
+
+#nxtPlayerButton {
+    visibility: hidden;
+    margin: 2px;
+    height: 40px;
+    width: 80px;
+    border-radius: 10%;
+    border: 2px solid white;
+    color: white;
+    background: transparent;
+    font-size: 18px;
+    font-family: "Fantasy";
+}
+
+#next {
+    visibility: hidden;
+    margin: 2px;
+    height: 40px;
+    width: 80px;
+    border-radius: 10%;
+    border: 2px solid white;
+    color: white;
+    background: transparent;
+    font-size: 18px;
+    font-family: "Fantasy";
+}
+
+#result {
+    margin: 20px;
+    padding: 0px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-family: "Fantasy";
+    height: 50px;
+    line-height: 50px;
+}
+
+#homeButton {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 130px;
+    height: auto;
+    font-size: 20px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
