@@ -52,8 +52,19 @@ function clearUsername() {
     document.forms["player-form"].style.display = "block";
 }
 
-function newInfo() {
-    localStorage.removeItem("totalScore");
-    localStorage.removeItem("lives");
-    localStorage.removeItem("difficulty");
+
+    function leaderboard() {
+    let players = JSON.parse(localStorage.getItem("player"));
+
+        players.sort(function(a, b) {
+        return b.score - a.score;
+    });
+
+    let leaderboard = document.getElementById("leaderboard");
+
+    for (let i = 0; i < players.length; i++) {
+        let rank = i + 1;
+
+        leaderboard.innerHTML += rank + ". " + players[i].username + " - " + players[i].score + "<br>";
+    }
 }
