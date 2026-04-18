@@ -199,6 +199,7 @@ function newPlayerButton() {
     localStorage.removeItem("lives");
     localStorage.removeItem("difficulty");
     resetRound();
+    
 }
 
 function nextButton() {
@@ -216,6 +217,7 @@ function addPlayer() {
         score: score, 
     };
 
+    let players = JSON.parse(localStorage.getItem("player"))
 
     players.push(player);
     localStorage.setItem("player", JSON.stringify(players));
